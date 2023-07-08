@@ -1,0 +1,9 @@
+version: "3"
+services:
+  streamlit:
+    build: .
+    command: "streamlit run src/main.py --server.port 9191"
+    ports:
+      - "9191:9191"
+    volumes:
+      - "./src:/usr/src/app/src"
