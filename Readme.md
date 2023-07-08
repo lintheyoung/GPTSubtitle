@@ -1,13 +1,18 @@
-# Streamlit on Docker
+# Using the GPT to translate the subtitle into Chinese
 
-## Run Streamlit
+## Run it
+```bash
+git clone https://github.com/lintheyoung/GPTSubtitle/
+docker build .
+docker-compose build
+```
+## Running
+```bash
+docker-compose up
+```
+open in your browser.: https://yourip:9191/
 
-### Run the main script
-
-Run `docker-compose up` to run `src/main.py` in Streamlit.
-
-then open [localhost:8501/?name=main](http://localhost:8501/?name=main) in your browser. 
-
-## Format
-
-Run `docker-compose run streamlit black src/`
+## Pause
+```bash
+docker-compose down
+```
